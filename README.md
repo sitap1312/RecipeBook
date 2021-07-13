@@ -75,18 +75,22 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 #### MVP 
 
-- Get the project API and add axios API call to find and use data from the COVID API database. 
-- Create a base frame for the project using HTML CSS and JS
-- Allow user to search for the latest information.
-- Render Vaccination information.
+- Create React App, install dependencies. 
+- Create a base frame for the project.
+- Create Components and display data.
+- Display all recipes.
+- Navigations to all components.
+- Allow users to Edit and Delete recipes.
+- Allow users to Like recipes.
+- Allow users to Add new recipes.
+- Update modified date, time and modofied By.
 - Adding media query.
 - Add styling in CSS, include Flexbox or Grid styling.
-- Remove previous search results for new search. 
 
 #### PostMVP  
 
-- Allow user to scroll down to each section by button click.
-- Render search images, cases and history info.
+- Allow user to comment on recipes.
+- Render video links for recipes.
 - Allow user to scroll back to the top of the page by single click.
 
 ## Project Schedule
@@ -104,8 +108,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 ## Priority Matrix
 
-![Screen Shot 2021-06-21 at 8 35 58 PM](https://user-images.githubusercontent.com/85080279/122859102-4c4bd200-d2d0-11eb-97da-e8f4736c25d5.png)
-
+![Screen Shot 2021-07-13 at 8 49 59 AM](https://user-images.githubusercontent.com/85080279/125484019-0e18f284-5363-4659-8a7b-4d07f215a34d.png)
 
 ## Timeframes
 
@@ -126,19 +129,11 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 ## Code Snippet
 
-Adding 2nd API to get more info. 
-
 ```
-async function displayVaccineData(vaccine) {
-  try {
-    const res = await axios.get(`https://covid-api.mmediagroup.fr/v1/vaccines?country=${searchVaccInput.value}`)
-    removeOldData(vaccineData);
-    const vaccList = res.data.All;
-    console.log(vaccList);
-}
+
 ```
 
 ## Change Log
  ```
 
-    ```
+ ```
