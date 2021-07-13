@@ -117,7 +117,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 | Creating basic structure| H | 3hrs| -hrs | -hrs |
 | Components | H | 6hrs | -hrs | -hrs |
 | React actual code | H | 4hrs | -hrs | -hrs |
-| Working with API | H | 3hrs| 2hrs | 2hrs |
+| Working with API | H | 3hrs| -hrs | -hrs |
 | CSS Styling | H | 6hrs | -hrs | -hrs |
 | Navigations | H | 3hrs | -hrs | -hrs |
 | Editing and Deleting | H | 2hrs | -hrs | -hrs |
@@ -125,7 +125,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 | CSS Styling | H | 6hrs | -hrs | -hrs |
 | PMVP Styling | H | 2hr | -hrs | -hrs |
 | Review of Functionality | H | 3hrs | -hrs | -hrs |
-| Total | H | 43hrs| hrs | hrs |
+| Total | H | 43hrs| -hrs | -hrs |
 
 ## Code Snippet
 
