@@ -1,0 +1,28 @@
+.links {
+  display: flex;
+  /* float: right; */
+  justify-content: space-between;
+}
+
+.links button{
+  background-color:lavender;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 10px;
+  width: 100px;
+  height: 25px;
+}
+
+.links button:hover{
+  background-color: rgb(160, 47, 47);
+  opacity: 0.8;
+}
+
+.nav{
+  display: flex;
+  margin-top: 50px;
+}
+
+.header img {
+  border-radius: 10px;
+}

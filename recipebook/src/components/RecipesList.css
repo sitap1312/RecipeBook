@@ -1,0 +1,36 @@
+.Recipes h1 {
+  color: darkred;
+  text-align: center;
+  float: none;
+}
+
+.Recipes h3{
+  color: darkred;
+  margin: 0;
+}
+
+.Recipes a:hover{
+  transform: scale(1.1);
+}
+
+.Recipes img {
+  height: 150px;
+  width: 150px;
+  border-radius: 100%;
+  border: 1px solid black;
+  margin: 0;
+}
+
+.recipe-container{
+  display: flex;
+  justify-self: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  justify-content: space-evenly;
+  /* margin-top: 100px; */
+}
+.Recipes a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
