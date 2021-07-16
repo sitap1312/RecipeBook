@@ -99,7 +99,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 |---|---| ---|
 |July 13| Prompt | Wireframes | Priority Matrix | Timeframes | Project Approval | Complete
 |July 14| Core Application Structure | Complete
-|July 15| Pseudocode | actual code | Complete
+|July 15| Actual code | Complete
 |July 16| MVP  | Complete
 |July 17| CSS Styling | Complete
 |July 18| PMVP and advance styling  | Incomplete
