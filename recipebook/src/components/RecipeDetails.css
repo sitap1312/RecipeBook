@@ -1,0 +1,37 @@
+.rd-pt-cb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-left: 20px;
+  margin-right: 20px;
+  color: darkred;
+  font-size: large;
+}
+
+.rd-main-details {
+  border: black 1px solid;
+  height: 500px;
+  width: 1000px;
+  border-radius: 20px;
+  margin-left: 230px;
+  background-color: rgb(248, 248, 177);
+  justify-content: center;
+}
+
+.rd-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.rd-btns button{
+  background-color: rgb(247, 193, 193);
+  height: 30px;
+  border-radius: 20px;
+}
+
+.rd-btns button:hover{
+  cursor: pointer;
+  background-color: rgb(160, 47, 47);
+}
+

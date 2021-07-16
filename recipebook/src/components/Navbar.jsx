@@ -25,7 +25,7 @@ function Navbar() {
         
         <br />
         
-        <Link to="/newrecipes" style={{ textDecoration: 'none', color: 'black' }}>
+        <Link to="/addrecipe" style={{ textDecoration: 'none', color: 'black' }}>
           <button>ADD RECIPE</button>
         </Link>
         

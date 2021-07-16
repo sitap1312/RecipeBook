@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './RecipesList.css';
+import ClipLoader from "react-spinners/ClipLoader";
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -26,6 +27,10 @@ function Recipes() {
   }
   console.log(recipesList);
 
+  if (recipesList.length === 0) {
+    return <ClipLoader />;
+  }
+
   return (
     <div className="Recipes">
       <Link to="/recipeslist" style={{ textDecoration: 'none' }} >
@@ -40,6 +45,14 @@ function Recipes() {
             </Link>
             )
         })}
+      </div>
+      <br />
+      <br />
+      <br />
+      <div>
+        <Link to={`/addrecipe/`} style={{ textDecoration: 'none' }} >
+          <button>ADD NEW RECIPE</button>
+        </Link>
       </div>
     </div>
   )
