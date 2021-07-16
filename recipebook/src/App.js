@@ -17,16 +17,20 @@ function App() {
 
       <div>
         <Route exact path="/">
-          <div className="intro">
-            <h1>AWESOME Recipes</h1>
-            <h3>TRY OUR TASTY AND HEALTHY VEGETARIAN RECIPES !</h3>
-            <p>
-              Vegetarian cooking is not about taking the meat away and reducing the flavour!
-              It can be absolutely amazing and we want to show you the best dishes.
-              If you’re trying to broaden your diet and eat more veggies,
-              or cooking for a friend who avoids meat, these recipes are too good to pass.
-              All recipes are fast and easy to follow, and worth doing even if dining alone.
-            </p>
+          <div id="intro-bck-img"></div>
+          <div className="intro-container">
+            <h1 className="intro-txt-h1">AWESOME Recipes</h1>
+            <h3 className="intro-txt-h3">TRY OUR TASTY AND HEALTHY VEGETARIAN RECIPES !</h3>
+            <div className='intro-txt'>
+              <p>
+                Vegetarian cooking is not about taking the meat away and reducing the flavour!
+                It can be absolutely amazing and we want to show you the best dishes.
+                If you’re trying to broaden your diet and eat more veggies,
+                or cooking for a friend who avoids meat, these recipes are too good to pass.
+                All recipes are fast and easy to follow, and worth doing even if dining alone.
+              </p>
+            </div>
+            
           </div>
         </Route>
 

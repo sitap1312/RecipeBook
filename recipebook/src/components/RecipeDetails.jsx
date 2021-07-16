@@ -47,14 +47,21 @@ function RecipeDetails() {
 
   return (
     <div>
-      <div className="rd-pt-cb">
+      {/* <div className="rd-pt-cb">
         <p><bold>Total Preparation Time:</bold> {recipe.fields?.totalTime} (h:mm)</p>
         <p><bold>Created By:</bold> {recipe.fields?.createdBy}</p>
-      </div>
+      </div> */}
 
       <section className="rd-main-details">
-        <div>
-          <img src={recipe.fields?.image} alt={recipe.fields?.name} />
+        <div className="rd-pt-cb">
+          <h5>Total Preparation Time: {recipe.fields?.totalTime} (h:mm)</h5>
+          <h5>Created By: {recipe.fields?.createdBy}</h5>
+        </div>
+
+        <img src={recipe.fields?.image} alt={recipe.fields?.name} />
+
+        <div className="rd-cont">
+          <h5 style={{color: "darkred", fontSize: "medium"}}>CALORIES: {recipe.fields?.calories}</h5>
           <h1>{recipe.fields?.name}</h1>
           <ul></ul>
           <h4>INGREDIENTS:
@@ -62,19 +69,22 @@ function RecipeDetails() {
               {recipe.fields?.ingredients}
             </ul>
           </h4>
-          <h5>INSTRUCTIONS: {recipe.fields?.instructions}</h5>
-          <p>CALORIES: {recipe.fields?.calories}</p>
-          <p>Created Time: {formatDate(recipe.createdTime)}</p>
+          <p>INSTRUCTIONS:
+            <ul>{recipe.fields?.instructions}</ul>
+          </p>
+          {/* <h5>Created Time: {formatDate(recipe.createdTime)}</h5> */}
         </div>
-        <div>
-          <p><bold>Modified By:</bold> {recipe.fields?.modifiedBy}</p>
-          <p><bold>Modified Time:</bold> {formatDate(recipe.modifiedTime)}</p>
+
+        <div className="rd-mod">
+          <h5>Created Time: {formatDate(recipe.createdTime)}</h5>
+          <h5>Modified By: {recipe.fields?.modifiedBy}</h5>
+          <h5>Modified Time: {formatDate(recipe.modifiedTime)}</h5>
         </div>
       </section>
 
       <br />
 
-      <section className="rd-links">
+      <section className="rd-like">
         <div>
           <LikeButton />
         </div>

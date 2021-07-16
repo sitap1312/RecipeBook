@@ -2,23 +2,41 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  margin-left: 20px;
-  margin-right: 20px;
   color: darkred;
   font-size: large;
+  align-content: center;
 }
 
 .rd-main-details {
   border: black 1px solid;
-  height: 500px;
-  width: 1000px;
+  height: auto;
+  width: 900px;
   border-radius: 20px;
-  margin-left: 230px;
+  margin:auto;
   background-color: rgb(248, 248, 177);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
-.rd-links {
+.rd-main-details img {
+  height: 300px;
+  width: 300px;
+  border: 1px solid black;
+  border-radius: 50%;
+  margin: auto;
+  align-content: center;
+}
+
+.rd-mod {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  color: darkred;
+  /* font-size: large; */
+}
+
+.rd-like {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -35,3 +53,9 @@
   background-color: rgb(160, 47, 47);
 }
 
+.rd-cont {
+  display: flex;
+  flex-direction: column;
+  /* padding-right: 30px; */
+  align-content: center;
+}

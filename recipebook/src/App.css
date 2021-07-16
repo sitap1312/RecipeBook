@@ -19,7 +19,7 @@ body{
   margin-top: 20px;
 }
 
-.intro {
+.intro-container {
   /* border: black 1px solid;
   height: 300px;
   width: 500px; */
@@ -27,44 +27,56 @@ body{
   /* border-radius: 50%; */
   /* margin-left: 500px; */
   /* margin-top: 100px; */
-  color: maroon;
+  /* color: maroon; */
   /* padding-top: -100px; */
+  position: relative;
   font-size: x-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 260px;
+  margin: auto;
   border: black 1px solid;
   border-radius: 50%;
   width: 900px;
   height: 500px;
+  /* background: url("https://images.pexels.com/photos/952356/pexels-photo-952356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: blur(2px); */
+}
+
+#intro-bck-img {
   background: url("https://images.pexels.com/photos/952356/pexels-photo-952356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
   filter: blur(2px);
+  width: 900px;
+  height: 500px;
+  border: black 1px solid;
+  border-radius: 50%;
+  z-index: -1;
 }
 
-.intro h1{
-  margin: 0;
+.intro-txt-h1{
+  /* margin: 0; */
   padding-top: -20px;
+  color: maroon;
+  /* font-size: x-large; */
 }
-.intro h2, h3, p{
-  margin: 0;
+.intro-txt-h3{
+  /* margin: 0; */
+  color: orange;
 }
 
-/* .intro h3, p {
-  padding-top: 50px;
-} */
-
-.intro p {
-  max-width: 60vw;
+.intro-txt {
+  max-width: auto;
   align-self: center;
   color:darkred;
 }
 
-.intro h3 {
+/* .intro-txt-h3 {
   color: orange;
-}
+} */
 
 /* .intro:hover {
   transform: scale(1.1);
