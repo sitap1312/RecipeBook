@@ -11,7 +11,7 @@ function LikeButton() {
 
   return (
     <div>
-      <button onClick={likeIncr}>❤️ &nbsp;&nbsp;&nbsp;{count}</button>
+      <button onClick={likeIncr}>❤️ &nbsp;LIKE &nbsp;&nbsp;&nbsp;{count}</button>
     </div>
   )
 };

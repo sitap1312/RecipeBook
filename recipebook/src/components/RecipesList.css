@@ -26,11 +26,25 @@
   justify-self: center;
   flex-wrap: wrap;
   margin-top: 50px;
-  justify-content: space-evenly;
+  justify-content: center;
   /* margin-top: 100px; */
 }
 .Recipes a {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.rl-link-btn button {
+  height: 30px;
+  width: auto;
+  font-size: large;
+  background-color: rgb(216, 168, 153);
+  border-radius: 10px;
+}
+
+.rl-link-btn button:hover{
+  cursor: pointer;
+  background-color: rgb(150, 19, 1);
+  transform: scale(1.1); 
 }

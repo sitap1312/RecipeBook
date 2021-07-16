@@ -46,9 +46,6 @@ function AddRecipe() {
 
   return (
     <div>
-      <div className="ar-title">
-        <h1>Add New Recipe</h1>
-      </div>
       <div className="ar-form">
         <form onSubmit={handleSubmit}>
           <label>Name: </label>
@@ -56,23 +53,25 @@ function AddRecipe() {
           <br />
           <br />
 
+          {/* <label>Ingredients: </label>
+          <input type="text" value={ingredients} onChange={(e) => setIngredients(e.target.value)} placeholder="Ingredients" style={{ height: "100px", width: "auto" }}></input> */}
           <label>Ingredients: </label>
-          <input type="text" rows="10" cols="7" value={ingredients} onChange={(e) => setIngredients(e.target.value)} placeholder="Ingredients"></input>
+          <textarea type="text" rows="5" cols="50" value={ingredients} onChange={(e) => setIngredients(e.target.value)} placeholder="Ingredients" ></textarea>
           <br />
           <br />
 
           <label>Instructions: </label>
-          <input type="text" value={instructions} onChange={(e) => setInstructions(e.target.value)} placeholder="Instructions"></input>
+          <textarea type="text" rows="5" cols="50" value={instructions} onChange={(e) => setInstructions(e.target.value)} placeholder="Instructions" ></textarea>
           <br />
           <br />
 
-          <label>Calories</label>
+          <label>Calories: </label>
           <input type="number" value={calories} onChange={(e) => setCalories(e.target.valueAsNumber)} placeholder="Calories"></input>
           <br />
           <br />
 
-          <label>Total Cook Time</label>
-          <input type="text" value={totalTime} onChange={(e) => setTotalTime(e.target.value)} placeholder="Total Cook Time"></input>
+          <label>Total Cook Time: </label>
+          <input type="text" value={totalTime} onChange={(e) => setTotalTime(e.target.value)} placeholder="hh:mm"></input>
           <br />
           <br />
 
@@ -97,7 +96,7 @@ function AddRecipe() {
           <br />
 
           <div>
-            <button type="submit">ADD RECIPE</button>
+            <button className="ar-btn" type="submit">ADD RECIPE</button>
           </div>
         </form>
       </div>

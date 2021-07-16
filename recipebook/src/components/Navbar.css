@@ -1,6 +1,5 @@
 .links {
   display: flex;
-  /* float: right; */
   justify-content: space-between;
 }
 

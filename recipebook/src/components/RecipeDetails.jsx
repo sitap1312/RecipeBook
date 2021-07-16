@@ -76,9 +76,9 @@ function RecipeDetails() {
         </div>
 
         <div className="rd-mod">
-          <h5>Created Time: {formatDate(recipe.createdTime)}</h5>
+          <h5>Created Date: {formatDate(recipe.createdTime)}</h5>
           <h5>Modified By: {recipe.fields?.modifiedBy}</h5>
-          <h5>Modified Time: {formatDate(recipe.modifiedTime)}</h5>
+          <h5>Modified date: {recipe.fields?.modifiedDate}</h5>
         </div>
       </section>
 

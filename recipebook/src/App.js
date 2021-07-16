@@ -1,10 +1,12 @@
 import './App.css';
 import { Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import RecipesList from './components/RecipesList';
 import RecipeDetails from './components/RecipeDetails';
 import EditRecipe from './components/EditRecipe';
 import AddRecipe from './components/AddRecipe';
+import Contact from './components/Contact';
 import Footer from './components/Footer';
 // import Likebutton from './components/Likebutton';
 
@@ -16,11 +18,10 @@ function App() {
       </header>
 
       <div>
-        <Route exact path="/">
-          <div id="intro-bck-img"></div>
+      <Route exact path="/">
           <div className="intro-container">
-            <h1 className="intro-txt-h1">AWESOME Recipes</h1>
-            <h3 className="intro-txt-h3">TRY OUR TASTY AND HEALTHY VEGETARIAN RECIPES !</h3>
+            <h1>AWESOME Recipes</h1>
+            <h3>TRY OUR TASTY AND HEALTHY VEGETARIAN RECIPES !</h3>
             <div className='intro-txt'>
               <p>
                 Vegetarian cooking is not about taking the meat away and reducing the flavour!
@@ -30,7 +31,11 @@ function App() {
                 All recipes are fast and easy to follow, and worth doing even if dining alone.
               </p>
             </div>
-            
+            <div className="intro-link">
+              <Link to={`/recipeslist/`} style={{ textDecoration: 'none' }}>
+                <button>ALL RECIPES 👉🏻</button>
+              </Link>
+            </div>
           </div>
         </Route>
 
@@ -50,9 +55,9 @@ function App() {
           <AddRecipe />
         </Route>
 
-        {/* <Route path="/likebutton">
-          <Likebutton />
-        </Route> */}
+        <Route path="/contact">
+          <Contact />
+        </Route>
 
       </div>
       <div>

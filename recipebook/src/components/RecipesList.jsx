@@ -49,9 +49,9 @@ function Recipes() {
       <br />
       <br />
       <br />
-      <div>
+      <div className="rl-link-btn">
         <Link to={`/addrecipe/`} style={{ textDecoration: 'none' }} >
-          <button>ADD NEW RECIPE</button>
+          <button>ADD NEW RECIPE 👆🏻</button>
         </Link>
       </div>
     </div>

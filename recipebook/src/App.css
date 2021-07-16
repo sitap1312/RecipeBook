@@ -20,70 +20,52 @@ body{
 }
 
 .intro-container {
-  /* border: black 1px solid;
-  height: 300px;
-  width: 500px; */
-  /* border-radius: 30px; */
-  /* border-radius: 50%; */
-  /* margin-left: 500px; */
-  /* margin-top: 100px; */
-  /* color: maroon; */
-  /* padding-top: -100px; */
-  position: relative;
   font-size: x-large;
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin: auto;
-  border: black 1px solid;
-  border-radius: 50%;
   width: 900px;
   height: 500px;
-  /* background: url("https://images.pexels.com/photos/952356/pexels-photo-952356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(2px); */
-}
-
-#intro-bck-img {
-  background: url("https://images.pexels.com/photos/952356/pexels-photo-952356.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-  background-repeat: no-repeat;
-  background-size: cover;
-  filter: blur(2px);
-  width: 900px;
-  height: 500px;
+  background-color: rgba(243, 199, 208, 0.2);
   border: black 1px solid;
-  border-radius: 50%;
-  z-index: -1;
+  border-radius: 50px;
+  padding: 20px;
 }
 
-.intro-txt-h1{
-  /* margin: 0; */
-  padding-top: -20px;
+.intro-container h1 {
   color: maroon;
-  /* font-size: x-large; */
 }
-.intro-txt-h3{
-  /* margin: 0; */
-  color: orange;
+.intro-container h3{
+  color: chocolate;
 }
 
 .intro-txt {
   max-width: auto;
   align-self: center;
   color:darkred;
+  font-size: large;
+} 
+
+.intro-link button{
+  height: 30px;
+  width: auto;
+  font-size: large;
+  background-color: chocolate;
+  border-radius: 10px;
 }
 
-/* .intro-txt-h3 {
-  color: orange;
-} */
-
-/* .intro:hover {
-  transform: scale(1.1);
-  opacity: 0.9;
-} */
-
-@media (prefers-reduced-motion: no-preference) {
+.intro-link button:hover{
+  cursor: pointer;
+  background-color: rgb(196, 83, 2);
+  transform: scale(1.2); 
 }
 
-
+@media only screen and (max-width: 600px) {
+  body {
+    background: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+  }
+}

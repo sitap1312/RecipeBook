@@ -1,8 +1,4 @@
-/* .ar-title h1{
-  align-content: center;
-} */
-
-.ar-form form {
+.er-form form {
   border: black 1px solid;
   border-radius: 20px;
   margin:auto;
@@ -15,13 +11,13 @@
   justify-content: center;
 }
 
-.ar-btn {
+.er-btn {
   background-color: rosybrown;
   height: 30px;
   border-radius: 20px;
 }
 
-.ar-btn:hover {
+.er-btn:hover {
   background-color: maroon;
   cursor: pointer;
 }
