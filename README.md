@@ -103,7 +103,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 |July 16| MVP  | Complete
 |July 17| CSS Styling | Complete
 |July 18| PMVP and advance styling  | Incomplete
-|July 19| Advance Styling | PMVP | Incomplete
+|July 19| Advance Styling, PMVP| Incomplete
 |July 20| Presentations | Incomplete
 
 ## Priority Matrix
