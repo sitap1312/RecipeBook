@@ -97,7 +97,7 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 13| Prompt | Wireframes | Priority Matrix | Timeframes | Project Approval | Complete
+|July 13| Priority Matrix, Wireframes, Project Approval | Complete
 |July 14| Core Application Structure | Complete
 |July 15| Actual code | Complete
 |July 16| MVP  | Complete
