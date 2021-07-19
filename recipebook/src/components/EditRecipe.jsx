@@ -15,17 +15,27 @@ function EditRecipe() {
   const history = useHistory();
 
   useEffect(() => {
-    fetchRecipe()
-  }, []);
 
-  const fetchRecipe = async () => {
-    const recipeURL = `${URL}/${id}`;
-    const resp = await axios.get(recipeURL,
-      {
-        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
-      });
-    setEditRecipe(resp.data.fields)
-  };
+    const fetchRecipe = async () => {
+      const recipeURL = `${URL}/${id}`;
+      const resp = await axios.get(recipeURL,
+        {
+          headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+        });
+      setEditRecipe(resp.data.fields)
+    };
+
+    fetchRecipe()
+  }, [id]);
+
+  // const fetchRecipe = async () => {
+  //   const recipeURL = `${URL}/${id}`;
+  //   const resp = await axios.get(recipeURL,
+  //     {
+  //       headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+  //     });
+  //   setEditRecipe(resp.data.fields)
+  // };
 
   const handleChange = (event) => {
     const { name, value } = event.target;

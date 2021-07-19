@@ -3,7 +3,8 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import './RecipesList.css';
-import ClipLoader from "react-spinners/ClipLoader";
+// import ClipLoader from "react-spinners/ClipLoader";
+import SyncLoader from "react-spinners/SyncLoader";
 
 const AIRTABLE_KEY = process.env.REACT_APP_AIRTABLE_KEY;
 const AIRTABLE_BASE = process.env.REACT_APP_AIRTABLE_BASE;
@@ -28,7 +29,7 @@ function Recipes() {
   console.log(recipesList);
 
   if (recipesList.length === 0) {
-    return <ClipLoader />;
+    return <SyncLoader />;
   }
 
   return (
@@ -40,7 +41,7 @@ function Recipes() {
         {recipesList.map((recipeList) => {
           return (
             <Link to={`/recipeslist/${recipeList.id}`} key={recipeList.id} style={{ textDecoration: 'none' }}>
-              <img src={recipeList.fields.image} />
+              <img src={recipeList.fields.image} alt={ recipeList.fields.name }/>
               <h3>{recipeList.fields.name}</h3>
             </Link>
             )

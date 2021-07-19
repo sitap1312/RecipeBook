@@ -7,7 +7,7 @@ function Navbar() {
     <div className="links">
       <div className="header">
         <Link to="/">
-          <img src="./assets/Recipelogo.png" />
+          <img src="./assets/Recipelogo.png"  alt="logo"/>
           <h1>RecipeBook</h1>
         </Link>
       </div>

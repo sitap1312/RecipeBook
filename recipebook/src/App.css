@@ -1,4 +1,4 @@
-body{
+.body{
   background: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,7 +27,7 @@ body{
   margin: auto;
   width: 900px;
   height: 500px;
-  background-color: rgba(243, 199, 208, 0.2);
+  background-color: rgba(247, 237, 162, 0.2);
   border: black 1px solid;
   border-radius: 50px;
   padding: 20px;
@@ -61,11 +61,23 @@ body{
   transform: scale(1.2); 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 550px), (min-width: 300px) {
   body {
     background: url("https://images.pexels.com/photos/349609/pexels-photo-349609.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
+  }
+
+  .App img {
+    height: 100px;
+    width: 100px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* float: left; */
+    /* margin-left: 50px; */
+    /* margin-top: 20px; */
   }
 }

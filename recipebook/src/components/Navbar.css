@@ -25,3 +25,17 @@
 .header img {
   border-radius: 10px;
 }
+
+@media only screen and (max-width: 550px) {
+  .nav{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .header img {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

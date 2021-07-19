@@ -12,7 +12,8 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <body className="App">
+    <div className="body">
+      <div className="App">
       <header>
         <Navbar />
       </header>
@@ -63,7 +64,9 @@ function App() {
       <div>
         <Footer />
       </div>
-    </body>
+    </div>
+    </div>
+      
   );
 }
 
