@@ -97,13 +97,13 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|July 13| Prompt | Wireframes | Priority Matrix | Timeframes | Project Approval | Complete
-|July 14| Core Application Structure | Incomplete
-|July 15| Pseudocode | actual code | Incomplete
-|July 16| MVP  | Incomplete
-|July 17| CSS Styling | Incomplete
+|July 13| Priority Matrix, Wireframes, Project Approval | Complete
+|July 14| Core Application Structure | Complete
+|July 15| Actual code | Complete
+|July 16| MVP  | Complete
+|July 17| CSS Styling | Complete
 |July 18| PMVP and advance styling  | Incomplete
-|July 19| Advance Styling | PMVP | Incomplete
+|July 19| Advance Styling, PMVP| Incomplete
 |July 20| Presentations | Incomplete
 
 ## Priority Matrix
@@ -114,15 +114,15 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Creating basic structure| H | 3hrs| -hrs | -hrs |
-| Components | H | 6hrs | -hrs | -hrs |
-| React actual code | H | 4hrs | -hrs | -hrs |
-| Working with API | H | 3hrs| -hrs | -hrs |
-| CSS Styling | H | 6hrs | -hrs | -hrs |
-| Navigations | H | 3hrs | -hrs | -hrs |
-| Editing and Deleting | H | 2hrs | -hrs | -hrs |
+| Creating basic structure| H | 3hrs| 4rs | 4hrs |
+| Components | H | 6hrs | 3hrs | 3hrs |
+| React actual code | H | 3hrs | 4hrs | 4hrs |
+| Working with API | H | 3hrs| 2hrs | 2hrs |
+| CSS Styling | H | 6hrs | 7hrs | 7hrs |
+| Navigations | H | 3hrs | 1.5hrs | 1.5hrs |
+| Editing and Deleting | H | 2hrs | 0.5hrs | 0.5hrs |
 | Responsive web desiging | H | 5hrs | -hrs | -hrs |
-| CSS Styling | H | 6hrs | -hrs | -hrs |
+| Advance CSS Styling | H | 6hrs | 7hrs | 7hrs |
 | PMVP Styling | H | 2hr | -hrs | -hrs |
 | Review of Functionality | H | 3hrs | -hrs | -hrs |
 | Total | H | 43hrs| -hrs | -hrs |
@@ -130,6 +130,38 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 ## Code Snippet
 
 ```
+<Route exact path="/addrecipe">
+          <AddRecipe />
+        </Route>
+
+        <Route path="/contact">
+          <Contact />
+        </Route>
+
+      </div>
+      <div>
+        <Footer />
+      </div>
+      
+----------------------------------------------------------------------------------------------------------
+      
+      function RecipeDetails() {
+  const [recipe, setRecipe] = useState({});
+  const { id } = useParams();
+  const history = useHistory();
+  
+  useEffect(() => {
+    fetchRecipe();
+  }, []);
+
+  const fetchRecipe = async () => {
+    const recipeURL = `${URL}/${id}`;
+    const resp = await axios.get(recipeURL,
+      {
+        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+      });
+    setRecipe(resp.data)
+  };
 
 ```
 
