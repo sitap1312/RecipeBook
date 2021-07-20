@@ -33,7 +33,6 @@
   flex-wrap: wrap;
   justify-content: space-evenly;
   color: darkred;
-  /* font-size: large; */
 }
 
 .rd-like {
@@ -60,6 +59,24 @@
   align-content: center;
   padding-left: 2%;
   padding-right: 2%;
+}
+
+.rd-comment-btns button{
+  background-color: rgb(247, 193, 193);
+  height: 30px;
+  border-radius: 5px;
+  width: 130px;
+}
+
+.rd-display-comment {
+  display: flex;
+  flex-direction: column;
+  font-size: large;
+}
+
+.rd-comment-btns button:hover{
+  cursor: pointer;
+  background-color: rgb(160, 47, 47);
 }
 
 @media only screen and (max-width: 700px) {
@@ -92,5 +109,5 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
-  
+
 }

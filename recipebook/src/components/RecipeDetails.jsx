@@ -14,22 +14,39 @@ const URL = `https://api.airtable.com/v0/${AIRTABLE_BASE}/Table%203`;
 
 function RecipeDetails() {
   const [recipe, setRecipe] = useState({});
+  const [comments, setComments] = useState([]);
+  const [input, setInput] = useState("");
   const { id } = useParams();
   const history = useHistory();
   
   useEffect(() => {
 
-    const fetchRecipe = async () => {
-      const recipeURL = `${URL}/${id}`;
-      const resp = await axios.get(recipeURL,
-        {
-          headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
-        });
-      setRecipe(resp.data)
-    };
+    // const fetchRecipe = async () => {
+    //   const recipeURL = `${URL}/${id}`;
+    //   const resp = await axios.get(recipeURL,
+    //     {
+    //       headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+    //     });
+    //   setRecipe(resp.data)
+    //   if (resp.data.fields.comments) {
+    //     setComments(JSON.parse(resp.data.fields.comments))
+    //   }
+    // };
 
     fetchRecipe();
   }, [id]);
+
+  const fetchRecipe = async () => {
+    const recipeURL = `${URL}/${id}`;
+    const resp = await axios.get(recipeURL,
+      {
+        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+      });
+    setRecipe(resp.data)
+    if (resp.data.fields.comments) {
+      setComments(JSON.parse(resp.data.fields.comments))
+    }
+  };
 
 
   const handleDelete = async () => {
@@ -40,7 +57,24 @@ function RecipeDetails() {
       });
     console.log(resp);
     history.push("/recipeslist");
-  }
+  };
+
+  const handleCommentSubmit = async (e) => {
+    e.preventDefault();
+    const recipeURL = `${URL}/${id}`;
+
+    let submitComments = [...comments, input]
+    let strComments = JSON.stringify(submitComments);
+    const resp = await axios.patch(recipeURL, { fields: { comments: strComments } },
+      {
+        headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
+      });
+    console.log(resp);
+    
+    setComments([]);
+    setInput("");
+    fetchRecipe();
+  };
 
   // const formatDate = (string) => {
   //   let options = { year: 'numeric', month: 'long', day: 'numeric' };
@@ -104,6 +138,46 @@ function RecipeDetails() {
           <button onClick={handleDelete}>DELETE RECIPE</button>
         </div>
       </section>
+
+      <br />
+      <br />
+
+      <section className="comments-section">
+
+        {comments.map(comment => {
+          return (
+            <div className="rd-display-comment">
+              <ul>
+                <li>
+                  {comment}
+                </li>
+              </ul>
+            </div>
+          )
+        })}
+
+        <br />
+        <br />
+        <br />
+        
+        <div className="rd-comment-form">
+          <form onSubmit={handleCommentSubmit}>
+            <label style={{ color: "darkred"}}><h4>Comments:</h4> </label>&nbsp; &nbsp; <br />
+            <textarea cols="75" rows="4" type="text" value={input} onChange={(e) => setInput(e.target.value)} placeholder="comment here..." />
+            
+            <br />
+            <br />
+
+            <div className="rd-comment-btns">
+              <button>SUBMIT</button>
+            </div>
+          </form>
+        </div>
+
+      </section>
+
+      <br />
+      <br />
       
     </div>
     
