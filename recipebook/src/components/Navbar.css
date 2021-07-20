@@ -26,6 +26,10 @@
   border-radius: 10px;
 }
 
+.header h1 {
+  text-decoration: none;
+}
+
 @media only screen and (max-width: 700px) {
   .nav-link{
     display: flex;
@@ -49,6 +53,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100vw;
+    text-decoration: none;
   }
 
   .links button{
