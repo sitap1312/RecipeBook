@@ -102,9 +102,9 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 |July 15| Actual code | Complete
 |July 16| MVP  | Complete
 |July 17| CSS Styling | Complete
-|July 18| PMVP and advance styling  | Incomplete
-|July 19| Advance Styling, PMVP| Incomplete
-|July 20| Presentations | Incomplete
+|July 18| PMVP and advance styling  | Complete
+|July 19| Advance Styling, PMVP| Complete
+|July 20| Presentations | Complete
 
 ## Priority Matrix
 
@@ -121,11 +121,11 @@ This is a Blog for Recipes, where users can View, Post, Edit and Delete Recipes.
 | CSS Styling | H | 6hrs | 7hrs | 7hrs |
 | Navigations | H | 3hrs | 1.5hrs | 1.5hrs |
 | Editing and Deleting | H | 2hrs | 0.5hrs | 0.5hrs |
-| Responsive web desiging | H | 5hrs | -hrs | -hrs |
+| Responsive web desiging | H | 5hrs | 8hrs | 8hrs |
 | Advance CSS Styling | H | 6hrs | 7hrs | 7hrs |
-| PMVP Styling | H | 2hr | -hrs | -hrs |
-| Review of Functionality | H | 3hrs | -hrs | -hrs |
-| Total | H | 43hrs| -hrs | -hrs |
+| PMVP Styling | H | 2hr | 2hrs | 2hrs |
+| Review of Functionality | H | 3hrs | 1hrs | 1hrs |
+| Total | H | 43hrs| 40hrs | 40hrs |
 
 ## Code Snippet
 
