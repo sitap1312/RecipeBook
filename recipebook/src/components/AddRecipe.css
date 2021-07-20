@@ -14,7 +14,8 @@
 .ar-btn {
   background-color: rosybrown;
   height: 30px;
-  border-radius: 20px;
+  width: auto;
+  border-radius: 5px;
 }
 
 .ar-btn:hover {

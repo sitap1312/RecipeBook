@@ -45,7 +45,8 @@
 .rd-btns button{
   background-color: rgb(247, 193, 193);
   height: 30px;
-  border-radius: 20px;
+  border-radius: 5px;
+  width: 130px;
 }
 
 .rd-btns button:hover{
@@ -88,10 +89,8 @@
 
   .rd-like {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
   }
-
-  .rd-btns {
-    padding-top: 10px;
-  }
+  
 }

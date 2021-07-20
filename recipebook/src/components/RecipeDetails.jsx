@@ -91,7 +91,7 @@ function RecipeDetails() {
 
       <section className="rd-like">
         <div>
-          <LikeButton />
+          <LikeButton style={{cursor: "pointer"}}/>
         </div>
         
         <div className="rd-btns">
