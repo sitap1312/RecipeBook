@@ -14,8 +14,8 @@
 .er-btn {
   background-color: rosybrown;
   height: 30px;
-  width: 150px;
-  border-radius: 20px;
+  width: auto;
+  border-radius: 5px;
   justify-content: center;
   margin: auto;
 }
