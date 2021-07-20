@@ -1,7 +1,3 @@
-/* .ar-title h1{
-  align-content: center;
-} */
-
 .ar-form form {
   border: black 1px solid;
   border-radius: 20px;
@@ -24,4 +20,15 @@
 .ar-btn:hover {
   background-color: maroon;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .ar-form form {
+    height: auto;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }

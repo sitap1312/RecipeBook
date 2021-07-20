@@ -1,7 +1,6 @@
 .fa {
   padding: 20px;
   font-size: 30px;
-  width: 25px;
   text-align: center;
   text-decoration: none;
   margin: 5px 2px;
@@ -36,7 +35,7 @@ h2 {
   margin-top: 50px;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 700px) {
   .cont {
     align-content: center;
   }

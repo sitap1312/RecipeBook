@@ -56,6 +56,42 @@
 .rd-cont {
   display: flex;
   flex-direction: column;
-  /* padding-right: 30px; */
   align-content: center;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+@media only screen and (max-width: 700px) {
+  .rd-main-details {
+    font-size: small;
+    height: auto;
+    width: 100vw;
+    border-radius: 20px;
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .rd-pt-cb {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .rd-main-details img {
+    height: 60%;
+    width: 60%;
+    align-content: center;
+  }
+
+  .rd-like {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rd-btns {
+    padding-top: 10px;
+  }
 }

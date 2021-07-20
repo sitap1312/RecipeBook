@@ -49,40 +49,42 @@ function RecipeDetails() {
 
   return (
     <div>
-      {/* <div className="rd-pt-cb">
-        <p><bold>Total Preparation Time:</bold> {recipe.fields?.totalTime} (h:mm)</p>
-        <p><bold>Created By:</bold> {recipe.fields?.createdBy}</p>
-      </div> */}
 
       <section className="rd-main-details">
+
+        <br />
+        <br />
+        
         <div className="rd-pt-cb">
           <h5>Total Preparation Time: {recipe.fields?.totalTime} (h:mm)</h5>
-          <h5 style={{color: "darkred", fontSize: "medium"}}>CALORIES: {recipe.fields?.calories}</h5>
+          <h5 style={{color: "darkred", fontSize: "medium", textDecoration: "underline"}}>CALORIES: {recipe.fields?.calories}</h5>
           <h5>Created By: {recipe.fields?.createdBy}</h5>
         </div>
+
+        <br />
+        <br />
 
         <img src={recipe.fields?.image} alt={recipe.fields?.name} />
 
         <div className="rd-cont">
-          {/* <h5 style={{color: "darkred", fontSize: "medium"}}>CALORIES: {recipe.fields?.calories}</h5> */}
           <h1>{recipe.fields?.name}</h1>
-          <ul></ul>
-          <h4>INGREDIENTS:
-            <ul>
-              {recipe.fields?.ingredients}
-            </ul>
-          </h4>
-          <p>INSTRUCTIONS:
-            <ul>{recipe.fields?.instructions}</ul>
-          </p>
-          {/* <h5>Created Time: {formatDate(recipe.createdTime)}</h5> */}
+          <br />
+          <br />
+          <h4>INGREDIENTS: <br /><br /> {recipe.fields?.ingredients}</h4>
+          <br />
+          <br />
+          <p>INSTRUCTIONS: <br /><br /> {recipe.fields?.instructions}</p>
         </div>
+
+        <br />
+        <br />
 
         <div className="rd-mod">
           <h5>Created Date: {formatDate(recipe.createdTime)}</h5>
           <h5>Modified By: {recipe.fields?.modifiedBy}</h5>
           <h5>Modified date: {recipe.fields?.modifiedDate}</h5>
         </div>
+        <br />
       </section>
 
       <br />
@@ -91,11 +93,13 @@ function RecipeDetails() {
         <div>
           <LikeButton />
         </div>
+        
         <div className="rd-btns">
           <Link to={`/editrecipe/${id}`}>
             <button>EDIT RECIPE</button>
           </Link>
         </div>
+        
         <div className="rd-btns">
           <button onClick={handleDelete}>DELETE RECIPE</button>
         </div>

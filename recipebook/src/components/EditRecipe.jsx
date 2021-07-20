@@ -28,15 +28,6 @@ function EditRecipe() {
     fetchRecipe()
   }, [id]);
 
-  // const fetchRecipe = async () => {
-  //   const recipeURL = `${URL}/${id}`;
-  //   const resp = await axios.get(recipeURL,
-  //     {
-  //       headers: { Authorization: `Bearer ${AIRTABLE_KEY}` }
-  //     });
-  //   setEditRecipe(resp.data.fields)
-  // };
-
   const handleChange = (event) => {
     const { name, value } = event.target;
     setEditRecipe((prevRecipe) => ({

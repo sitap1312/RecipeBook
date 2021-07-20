@@ -6,7 +6,7 @@ function Navbar() {
   return (
     <div className="links">
       <div className="header">
-        <Link to="/">
+        <Link to="/" className="nav-link">
           <img src="./assets/Recipelogo.png"  alt="logo"/>
           <h1>RecipeBook</h1>
         </Link>

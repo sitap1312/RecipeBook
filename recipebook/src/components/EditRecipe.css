@@ -14,10 +14,24 @@
 .er-btn {
   background-color: rosybrown;
   height: 30px;
+  width: 150px;
   border-radius: 20px;
+  justify-content: center;
+  margin: auto;
 }
 
 .er-btn:hover {
   background-color: maroon;
   cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .er-form form {
+    height: auto;
+    width: 100vw;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
 }
