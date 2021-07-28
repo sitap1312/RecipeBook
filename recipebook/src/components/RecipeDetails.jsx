@@ -34,6 +34,7 @@ function RecipeDetails() {
     // };
 
     fetchRecipe();
+    // eslint-disable-next-line
   }, [id]);
 
   const fetchRecipe = async () => {
